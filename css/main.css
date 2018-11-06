@@ -96,17 +96,250 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+    /* ============ FONTS ================
+font-family: 'Nova Square', cursive;
+font-family: 'Lato', sans-serif;
+====================================*/
+
+/* ============ COLOR PALETTE ================
+background #222831
+header/footer bg #393E46
+headings/link #00ADB5
+body text #EEEEEE
+====================================*/
 
 
+body {background-color:#222831;
+color:#ddd;
+font-family: 'Lato', sans-serif;
+position:relative;}
+
+a {color:#00ADB5;
+text-decoration:none;}
+
+h1, h2, h3 {font-family: 'Nova Square', cursive;
+color:#00ADB5;}
+
+button {background-color:#00ADB5;
+    border-radius:4px;
+    padding:20px;
+    border:none;
+    color:#eee;}
+
+button:hover {background-color:#393E46;}
+
+.toTop {position:absolute;
+right:6%;
+top:85%;
+position:fixed;
+text-align:center;
+z-index:1001;}
+
+.toTop p {display:none;}
+
+.toTop i {font-size:3rem;
+color:#eee;}
+
+.about, .services, .clients {padding:20px;}
+
+.mImg, .mImg2 {
+position:relative;}
+
+.mImg img {width:100%;}
+.mImg2 img {width:50%;
+text-align:center;}
+
+.mImg:before, header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#222831, #222831);
+    opacity:.7;
+  }
+
+header {position:relative;
+height:50vh;
+background-image:url('../img/keyboard.jpg');
+background-size:cover;
+background-attachment:fixed;
+background-position:center center;}
 
 
+.slogan {position:absolute;
+top:30%;
+left:10%;
+text-align:center;}
+
+.more {display:none;}
+
+#envy {font-size:2rem;
+color:#00ADB5;
+letter-spacing:15px;}
+
+.homeText h2, .homeText2 h2, .aboutText h2 {display:none;}
+
+.homeText, .homeText2, .aboutText {margin-top:10px;}
+
+.mh2 {background:#393E46;
+padding:10px;
+text-align:center;}
 
 
+footer {background:#393E46;
+    text-align:center;}
+
+.socialLinks {text-align:center;
+font-size:3rem;}
+
+/* 
+facebook --- 3b5998 
+instagram --- e1306c
+twitter --- 1da1f2
+google+ --- dd4b39
+linkedin --- 0077b5
+github --- 6e5494
+*/
+
+.fb, .twitter, .insta, .gplus, .linked, .github {
+    display:inline-block;
+    margin:2px;}
+
+.fb a {color:#3b5998;}
+.twitter a {color:#1da1f2;}
+.insta a {color:#e1306c;}
+.gplus a {color:#dd4b39;}
+.linked a {color:#0077b5;}
+.github a {color:#6e5494;}
+
+.connect h3, .container h3 {background-color:#222831;
+padding:10px 0;
+text-align:center;}
+
+.connect li {list-style:none;
+padding:20px 0;
+text-align:center;
+text-transform:uppercase;}
+
+.newsletter input {display:block;
+    margin:10px auto;
+    width:75%;
+    padding:10px;
+}
+
+.location li {list-style:none;}
+.location {margin-top:40px;}
+
+.emptyline {display:none;}
+
+.aboutText button {display:none;}
+
+.aboutText, .team {padding:20px;}
 
 
+.teamPhoto {width:100%;}
+.overlay h4 {color:#00ADB5;
+font-size:1.5rem;
+font-family:'Nova Square', cursive;}
+.overlay {text-align:center;}
+.overlay p {margin-top:-20px;}
+
+.communityText h2 {display:none;}
+
+.communityText {padding:20px;}
+
+.maboutimg {height:250px;
+background-image:url(../img/keyboardmouse.jpg);
+background-size:100%;
+background-attachment:fixed;
+background-repeat:no-repeat;
+position:relative;}
+
+.maboutimg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#222831, #222831);
+    opacity:.7;
+}
+
+#digital, .branding {padding:20px;}
+
+.aboutText img {width:50%;}
+
+#kelepona {margin-top:50px;}
+
+#contact {
+padding-bottom:30px;
+background:#00ADB5;}
+
+.contact form {margin-top:20px;}
+
+/* Style inputs with type="text", select elements and textareas */
+.contact input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+.contact input[type=submit] {
+    background-color: #222831;
+    color: white;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact input[type=checkbox] {-webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    margin-right:10px;}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact input[type=submit]:hover {
+    background-color: #eee;
+    color:#222831;
+}
+
+/* Add a background color and some padding around the form */
+.contact, .loc {
+    border-radius: 5px;
+    padding: 20px;
+    margin:auto;
+    width:90%;
+}
 
 
+.contact h1, .loc h1 {color:#eee;
+    text-transform:uppercase;
+    text-align:center;
+    text-shadow: 2px 3px #222831;
+    font-size:3rem;}
 
+.contact p, .loc p {margin-top:-30px;
+text-align:center;}
+
+.loc li {list-style: none;
+color:#eee;}
+
+.loc h3 {text-align:center;}
+
+.linebreak {border-top:dashed 2px #222831;
+width:100%;
+margin:0 auto;}
 
 
 /* ==========================================================================
@@ -199,7 +432,7 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 
     /* ============ FONTS ================
-font-family: 'Nunito Sans', sans-serif;
+font-family: 'Nova Square', cursive;
 font-family: 'Lato', sans-serif;
 ====================================*/
 
@@ -219,7 +452,7 @@ body {position:relative;
 a {color:#00ADB5;
     text-decoration:none;}
 
-h1, h2, h3 {font-family: 'Nunito Sans', sans-serif;
+h1, h2, h3 {font-family: 'Nova Square', cursive;
     color:#00adb5;}
 
 .toTop {position:fixed;
@@ -230,10 +463,22 @@ h1, h2, h3 {font-family: 'Nunito Sans', sans-serif;
     text-align:center;
     color:#fff;}
 
+.toTop p{display:block;}
+
 .fa-arrow-circle-up {font-size:2.5rem;
     color:#fff;}
 
 img {width:100%;}
+
+.siteTitle {/*border:1px solid #fff;*/
+position:absolute;
+left:140px;
+top:-10px;}
+
+#nav {position:relative;}
+#logo {width:5%;}
+
+.mImg {display:none;}
 
 
 /*========================== HEADER ===========================*/
@@ -251,7 +496,7 @@ header:before, .services:before {
     bottom: 0;
     left: 0;
     background-image: linear-gradient(#393E46, #393E46);
-    opacity:.8;
+    opacity:.7;
   }
 
 
@@ -265,7 +510,7 @@ linkedin --- 0077b5
 github --- 6e5494
 */
 
-footer {height:50vh;
+footer {height:300px;
     background:#393E46;
     padding-bottom:5px;}
 
@@ -356,30 +601,53 @@ line-height:3rem;}
     font-size:.85rem;}
 
 .copyright {text-align:center;
-font-size:.85rem;
+font-size: .9rem;
 background:#393E46;}
+
+.emptyline {display:block;}
+
+.connect h3, .container h3 {background-color:transparent;
+padding:0;
+text-align:center;}
+
+.connect li {list-style:none;
+padding:0px;
+text-align:left;
+text-transform:uppercase;}
+
+.location {margin-top:0px;}
+
+.location li {text-align:left;}
 
 /*========================== HOME PAGE ===========================*/
 .homeText {margin-top:40px;}
 
-.headerText {position:absolute;
-    left:10%;
-    top:35%;}
+/*.headerText {position:relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);}*/
+
+#envy {font-family: 'Nova Square', cursive; color:#00ADB5;
+font-size:8rem;
+line-height:90px;
+letter-spacing:15px;}
 
 .slogan {
     max-width:550px;
     font-size:1.65rem;
-    text-align:left;
-    float:left;
-    margin-left:150px;
     color:#fff;
-    text-align:center;}
+    text-align:center;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);}
 
 .slogan p {line-height:50px;}
 
+/*
 .bigLogo {z-index:900;
 float:left;
-width:30%;}
+width:30%;}*/
 
 .bigLogo img {width:100%;}
 
@@ -387,7 +655,8 @@ width:30%;}
     text-align: center;
     padding:16px 0;
     background:#393E46;
-    color:#fff;}
+    color:#fff;
+    display:block;}
 
 
 /*#about, #services, #clients {height:130px;
@@ -423,7 +692,7 @@ header, .about, .services, .clients {height:100vh;
 .services {background-image:url('../img/screen.jpg');}
 .clients {background-image:url('../img/clientsbg.jpg');}
 
-.homeText, .homeText2 {max-width:400px;
+.homeText, .homeText2 {width:45%;
 padding:15px;
 position:absolute;
 text-align:left;}
@@ -435,15 +704,16 @@ text-align:left;}
 .homeText2 {right:50px;
     top:15%;}
 
-.homeText h2, .homeText2 h2 {background:rgba(34, 40, 49, .5);
+.homeText h2, .homeText2 h2 {background:rgba(34, 40, 49, .7);
     padding:20px;
-    color:#00ADB5;}
+    color:#00ADB5;
+    display:block;}
 
-.paragraph {background:rgba(34, 40, 49, .3);
-padding:20px;
+.paragraph {background:rgba(34, 40, 49, .5);
+padding:40px;
 text-align:left;
 margin-top:-20px;
-color:#eee;}
+color:#aaa;}
 
 .homeText button, .homeText2 button {
     border:none;
@@ -457,8 +727,12 @@ color:#eee;}
     color:#00ADB5;
 }
 
+.mh2 {display:none;}
+
 
 /*========================== ABOUT PAGE ===========================*/
+
+.maboutimg {display:none;}
 
 .history, .teamWrapper {height:100vh;
     background-position:center center;
@@ -468,10 +742,9 @@ color:#eee;}
 .history {background-image:url('../img/alexworking.jpg');
     position:relative;}
 
-.teamWrapper {background-color:#222831;
-    position:relative;}
+.teamWrapper {background-color:#222831;}
 
-.aboutText {max-width:500px;
+.aboutText, .communityText {width:45%;
 padding:15px;
 position:absolute;
 text-align:left;}
@@ -480,12 +753,17 @@ text-align:left;}
     top:25%;
     color:#222831;}
 
-.aboutText h2 {background:rgba(34, 40, 49, .5);
-    padding:20px;
-    color:#00ADB5;}
+.communityText {color:#222831;
+    top:25%;
+    right:50px;}
 
-.aboutp {background:rgba(34, 40, 49, .3);
-padding:20px;
+.aboutText h2, .communityText h2 {background:rgba(34, 40, 49, .7);
+    padding:20px;
+    color:#00ADB5;
+    display:block;}
+
+.aboutp {background:rgba(34, 40, 49, .5);
+padding:40px;
 text-align:left;
 margin-top:-20px;
 color:#eee;
@@ -499,14 +777,15 @@ font-size:.9rem;}
     bottom: 0;
     left: 0;
     background-image: linear-gradient(#393E46, #393E46);
-    opacity:.8;
+    opacity:.7;
   }
 
 .centerTeam {position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    width:960px;}
+    width:960px;
+    padding-bottom:300px;}
 
 .team {
   position: relative;
@@ -533,6 +812,10 @@ font-size:.9rem;}
   transition: .5s ease;
 }
 
+.overlay h4 {color:#393E46;
+font-size:1.5rem;
+font-family:'Nova Square', cursive;}
+
 .team:hover .overlay {
   height: 100%;
 }
@@ -554,7 +837,8 @@ font-size:.9rem;}
     padding:10px;
     width:250px;
     background:#00ADB5;
-    color:#eee;}
+    color:#eee;
+    display:block;}
 
 .history button:hover {
     background:#222831;
@@ -579,19 +863,146 @@ font-size:.9rem;}
     opacity:.5;
 }
 
+.aboutText, .team {padding:0px;}
+
 /*========================== SERVICES PAGE ===========================*/
+#digital, .branding {height:100vh;
+    background-size:cover;
+    background-position:center center;
+    background-attachment: fixed;
+    position:relative;}
 
+#digital {background-image:url('../img/computerblank.jpg');}
+.branding {background-image:url('../img/brandingbg.jpg');}
 
+#digital:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#00ADB5, #00ADB5);
+    opacity:.5;
+}
+
+.branding:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#393E46, #393E46);
+    opacity:.7;
+  }
 
 
 /*========================== CLIENTS PAGE ===========================*/
+#kelepona {background-image:url('../img/brandingbg.jpg');
+    height:100vh;
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    position:relative;}
 
+    #kelepona:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#393E46, #393E46);
+    opacity:.5;
+}
 
+#chordis {background-image:url('../img/chordisbg.jpg');
+    height:100vh;
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    position:relative;}
+
+    #chordis:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#00ADB5, #00ADB5);
+    opacity:.5;
+}
+
+.mImg2 {display:none;}
 
 
 /*========================== CONTACT PAGE ===========================*/
 
+#contact {height:100vh;
+    padding-bottom:30px;
+background:#00ADB5;}
 
+.contact form {margin-top:20px;}
+/* Style inputs with type="text", select elements and textareas */
+.contact input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+.contact input[type=submit] {
+    background-color: #222831;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact input[type=submit]:hover {
+    background-color: #393E46;
+}
+
+/* Add a background color and some padding around the form */
+.contact, .loc {
+    border-radius: 5px;
+    padding: 20px;
+    margin:auto;
+    margin-top:80px;
+    width:40%;
+    float:left;
+}
+
+.loc {width:50%;}
+
+.contact h1, .loc h1 {color:#eee;
+    text-transform:uppercase;
+    text-align:center;
+    text-shadow: 2px 3px #222831;
+    font-size:3rem;}
+
+.contact p, .loc p {margin-top:-30px;
+text-align:center;}
+
+.loc li {list-style: none;
+color:#eee;}
+
+.loc h3 {text-align:center;}
+
+.linebreak {border-top:dashed 2px #222831;
+width:100%;
+margin:0 auto;}
+
+.filler {height:150px;
+background-color:#00ADB5;}
 
 }
 

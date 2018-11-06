@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Nova+Square" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
@@ -35,9 +35,13 @@
 <nav id="nav">
       <a href="index.html"><img id="logo" class="logo" src="img/logo-02.png"></a>
       <span id="title" class="siteTitle">NV Designs</span>
-    <a class="close-menu" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
     <div class="clearfix"></div>
   <ul id="navul">
+       <li class="hiddenLink">
+      <a href="#">
+        <i class="fa fa-times" aria-hidden="true"></i>CLOSE
+      </a>
+    </li>
     <li class="hiddenLink">&nbsp;</li>
     <li><a href="#about">ABOUT</a></li>
     <li><a href="#services">SERVICES</a></li>
@@ -47,14 +51,14 @@
 </nav>
 
 <div class="toTop">
-  <p>BACK TO TOP<br><a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+  <p>BACK TO TOP</p><br><a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
 </div>
 
 <header>
 <div class="headerText">
-  <div class="bigLogo"><img src="img/logo-02.png"></div>
+<!--   <div class="bigLogo"><img src="img/logo-02.png"></div> -->
   <div class="slogan"><h2>Branding & Digital Solutions</h2>
-    <p>to make your business the<br><span style="color:#00ADB5; font-size:8rem; line-height:90px; letter-spacing:15px;">ENVY</span><br>of others...</p></div>
+    <p>to make your business the<br><span id="envy">ENVY</span><br>of others...</p></div>
 </div>
 </header>
 
@@ -62,6 +66,8 @@
 
 <div id="about"></div>
 <section class="about">
+  <h2 class="mh2">About Us</h2>
+<div class="mImg"><img src="img/aboutus.jpg"></div>
   <div class="homeText">
     <h2>About Us</h2>
     <div class="paragraph">Our team of creative and bussines-oriented designers are here to help you and to talk with you every step of the way.
@@ -73,6 +79,8 @@
 
 <div id="services"></div>
 <section class="services">
+  <h2 class="mh2">Services</h2>
+  <div class="mImg"><img src="img/screen.jpg"></div>
   <div class="homeText2">
     <h2>Services</h2>
     <div class="paragraph">
@@ -85,9 +93,11 @@
 
 <div id="clients"></div>
 <section class="clients">
+  <h2 class="mh2">Our Clients</h2>
+  <div class="mImg"><img src="img/clientsbg.jpg"></div>
   <div class="homeText">
     <h2>Our Clients</h2>
-    <div class="paragraph">NV Designs helped our new business blossom by creating a website and a mobile app for us! They were so incredible to work with and kept us in the loop the whole time." - Kelepona<Br><Br>
+    <div class="paragraph">"NV Designs helped our new business blossom by creating a website and a mobile app for us! They were so incredible to work with and kept us in the loop the whole time." - Kelepona<Br><Br>
     <div style="text-align:center;"><a href="clients.html#kelepona"><button>See Case Study</button></a></div>
   </div>
   </div>
@@ -140,9 +150,9 @@
   <ul>
     <li> 221 Weybosset Street</li>
     <li>Providence, RI 02903</li>
-    <li>&nbsp;</li>
+    <li class="emptyline">&nbsp;</li>
     <li>401.555.2222</li>
-    <li>&nbsp;</li>
+    <li class="emptyline">&nbsp;</li>
     <li>hello@NVdesigns.com</li>
   </ul>
 </div>
