@@ -114,7 +114,7 @@ color:#ddd;
 font-family: 'Lato', sans-serif;
 position:relative;}
 
-a {color:#00ADB5;
+a {color:#eee;
 text-decoration:none;}
 
 h1, h2, h3 {font-family: 'Nova Square', cursive;
@@ -127,6 +127,7 @@ button {background-color:#00ADB5;
     color:#eee;}
 
 button:hover {background-color:#393E46;}
+button:focus {outline:3px #00ADB5 solid;}
 
 .toTop {position:absolute;
 right:6%;
@@ -207,12 +208,12 @@ github --- 6e5494
     display:inline-block;
     margin:2px;}
 
-.fb a {color:#3b5998;}
+/*.fb a {color:#3b5998;}
 .twitter a {color:#1da1f2;}
 .insta a {color:#e1306c;}
 .gplus a {color:#dd4b39;}
 .linked a {color:#0077b5;}
-.github a {color:#6e5494;}
+.github a {color:#6e5494;}*/
 
 .connect h3, .container h3 {background-color:#222831;
 padding:10px 0;
@@ -274,7 +275,7 @@ position:relative;}
 
 #kelepona {margin-top:50px;}
 
-#contact {
+.contactsec {
 padding-bottom:30px;
 background:#00ADB5;}
 
@@ -340,6 +341,12 @@ color:#eee;}
 .linebreak {border-top:dashed 2px #222831;
 width:100%;
 margin:0 auto;}
+
+.mockup, .mockup2, .mockup3, .mockup4, .mockup5 {display:none;}
+
+.keleponacase h2 {display:none;}
+
+.caseInfo {padding:20px;}
 
 
 /* ==========================================================================
@@ -480,6 +487,9 @@ top:-10px;}
 
 .mImg {display:none;}
 
+.wrapper {margin:0 auto;
+max-width:90%;}
+
 
 /*========================== HEADER ===========================*/
 
@@ -539,8 +549,8 @@ footer {height:300px;
 .column {
     float: left;
     width: 45%;
-    margin-left:30px;
-}
+/*    margin-left:30px;
+*/}
 
 /* Clear floats after the columns */
 .row:after {
@@ -580,10 +590,12 @@ input[type=submit]:hover {
     opacity: 0.8;
 }
 
-.connect {margin-left:60px;}
+.connect {margin-left:60px;
+text-align:left;}
 .connect h3 {font-size:2rem;
 margin-bottom:-10px;
-margin-top:0px;}
+margin-top:0px;
+text-align:left;}
 .connect li {list-style: none;
 line-height:3rem;}
 .connect a {color:#eee;}
@@ -593,7 +605,7 @@ line-height:3rem;}
 
 .location iframe {margin-top:20px;
     float:left;
-    margin-left:65px;}
+    margin-left:35px;}
 .location ul {float:left;
     margin-left:-20px;
     margin-top:20px;}
@@ -630,6 +642,7 @@ text-transform:uppercase;}
 #envy {font-family: 'Nova Square', cursive; color:#00ADB5;
 font-size:8rem;
 line-height:90px;
+padding-top:20px;
 letter-spacing:15px;}
 
 .slogan {
@@ -642,7 +655,7 @@ letter-spacing:15px;}
     top:50%;
     transform:translate(-50%, -50%);}
 
-.slogan p {line-height:50px;}
+/*.slogan p {line-height:40px;}*/
 
 /*
 .bigLogo {z-index:900;
@@ -678,6 +691,8 @@ header, .about, .services, .clients {height:100vh;
     background-position:center center;
     position:relative;}
 
+.clients {background-position:top center;}
+
 .about, .services, .clients {padding-top:40px;
     position:relative;
     text-align:center;
@@ -690,7 +705,7 @@ header, .about, .services, .clients {height:100vh;
 
 .about {background-image:url('../img/alexworking.jpg');}
 .services {background-image:url('../img/screen.jpg');}
-.clients {background-image:url('../img/clientsbg.jpg');}
+.clients {background-image:url('../img/clientsbgnew.jpg');}
 
 .homeText, .homeText2 {width:45%;
 padding:15px;
@@ -698,7 +713,7 @@ position:absolute;
 text-align:left;}
 
 .homeText {left:50px;
-    top:15%;
+    top:10%;
     color:#222831;}
 
 .homeText2 {right:50px;
@@ -713,7 +728,8 @@ text-align:left;}
 padding:40px;
 text-align:left;
 margin-top:-20px;
-color:#aaa;}
+color:#aaa;
+font-size:1.35rem;}
 
 .homeText button, .homeText2 button {
     border:none;
@@ -724,6 +740,7 @@ color:#aaa;}
 
 .homeText button:hover, .homeText2 button:hover {
     background:#222831;
+    border:1px solid #00ADB5;
     color:#00ADB5;
 }
 
@@ -735,27 +752,27 @@ color:#aaa;}
 .maboutimg {display:none;}
 
 .history, .teamWrapper {height:100vh;
-    background-position:center center;
+    background-position:top center;
     background-attachment:fixed;
     background-size:cover;}
 
-.history {background-image:url('../img/alexworking.jpg');
+.history {background-image:url('../img/aboutus.jpg');
     position:relative;}
 
 .teamWrapper {background-color:#222831;}
 
-.aboutText, .communityText {width:45%;
+.aboutText, .communityText {width:50%;
 padding:15px;
 position:absolute;
 text-align:left;}
 
 .aboutText {left:50px;
-    top:25%;
-    color:#222831;}
+    top:15%;
+    color:#ddd;}
 
 .communityText {color:#222831;
-    top:25%;
-    right:50px;}
+    top:14%;
+    right:8px;}
 
 .aboutText h2, .communityText h2 {background:rgba(34, 40, 49, .7);
     padding:20px;
@@ -766,8 +783,8 @@ text-align:left;}
 padding:40px;
 text-align:left;
 margin-top:-20px;
-color:#eee;
-font-size:.9rem;}
+color:#aaa;
+font-size:1.35rem;}
 
 .history:before {
     content: '';
@@ -783,15 +800,15 @@ font-size:.9rem;}
 .centerTeam {position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
-    width:960px;
+    transform:translate(-45%,-50%);
+    width:90%;
     padding-bottom:300px;}
 
 .team {
   position: relative;
-  width:30%;
+  width:29%;
   display:inline-block;
-  margin:10px 5px;
+  margin:0;
 }
 
 .teamPhoto {
@@ -799,6 +816,8 @@ font-size:.9rem;}
   width: 100%;
   height: auto;
 }
+
+#team {height:180px;}
 
 .overlay {
   position: absolute;
@@ -812,8 +831,12 @@ font-size:.9rem;}
   transition: .5s ease;
 }
 
+.overlay p {font-style:none;
+font-size:1.05rem;}
+
 .overlay h4 {color:#393E46;
-font-size:1.5rem;
+font-size:1.25rem;
+font-style:bold;
 font-family:'Nova Square', cursive;}
 
 .team:hover .overlay {
@@ -843,6 +866,7 @@ font-family:'Nova Square', cursive;}
 .history button:hover {
     background:#222831;
     color:#00ADB5;
+    border:1px solid #00ADB5;
 }
 
 #community {height:100vh;
@@ -866,7 +890,7 @@ font-family:'Nova Square', cursive;}
 .aboutText, .team {padding:0px;}
 
 /*========================== SERVICES PAGE ===========================*/
-#digital, .branding {height:100vh;
+#digital, .branding {height:90vh;
     background-size:cover;
     background-position:center center;
     background-attachment: fixed;
@@ -899,10 +923,10 @@ font-family:'Nova Square', cursive;}
 
 
 /*========================== CLIENTS PAGE ===========================*/
-#kelepona {background-image:url('../img/brandingbg.jpg');
+#kelepona {background-image:url('../img/keleponabg.jpg');
     height:100vh;
     background-size:cover;
-    background-position:center center;
+    background-position:top center;
     background-attachment:fixed;
     position:relative;}
 
@@ -913,11 +937,24 @@ font-family:'Nova Square', cursive;}
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(#393E46, #393E46);
+    background-image: linear-gradient(#393E46, #00ADB5);
     opacity:.5;
 }
 
-#chordis {background-image:url('../img/chordisbg.jpg');
+.keleponacase, .chordiscase {position:absolute;
+top:10%;
+max-width:40%;
+padding:50px;
+}
+
+.caseInfo {background:rgba(57, 62, 70, .7);
+padding:20px;}
+
+.kelephonacase h2 {background-color:#00ADB5;
+position:absolute;
+left:50%;}
+
+#chordis {background-image:url('../img/chordisbg2.jpg');
     height:100vh;
     background-size:cover;
     background-position:center center;
@@ -931,8 +968,12 @@ font-family:'Nova Square', cursive;}
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(#00ADB5, #00ADB5);
+    background-image: linear-gradient(#393E46, #00ADB5);
     opacity:.5;
+}
+
+.chordiscase {top:5%;
+position:absolute;
 }
 
 .mImg2 {display:none;}
@@ -940,7 +981,9 @@ font-family:'Nova Square', cursive;}
 
 /*========================== CONTACT PAGE ===========================*/
 
-#contact {height:100vh;
+#contact {height:50px;}
+
+.contactsec {height:100vh;
     padding-bottom:30px;
 background:#00ADB5;}
 
